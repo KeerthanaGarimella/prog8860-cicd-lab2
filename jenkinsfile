@@ -11,21 +11,18 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Simulating build...'
-                // Add real build commands here if needed
             }
         }
 
         stage('Test') {
             steps {
                 echo 'Running tests...'
-                // Add test scripts or unit tests here
             }
         }
 
         stage('Deploy') {
             steps {
                 echo 'Deploying application...'
-                // Optional deployment stage
             }
         }
 
