@@ -1,0 +1,57 @@
+PROG8860 – CI/CD Lab 2 Submission Report
+
+Student Name: Keerthana Garimella
+Course: PROG8860
+Assignment Name: CI/CD Lab 2
+GitHub Repository URL:
+ https://github.com/KeerthanaGarimella/prog8860-cicd-lab2
+
+1️⃣ Approach
+I configured a Jenkins Pipeline project.
+
+Jenkins connects to my personal GitHub repository.
+
+A  Poll SCM is used to automatically trigger the pipeline on code changes.
+
+The pipeline executes multiple stages: Checkout, Build, Test, Deploy, Notify.
+
+2️⃣ Pipeline Details
+Stages used:
+
+Checkout
+
+Build
+
+Test
+
+Deploy
+
+Notify
+
+Pipeline Script used:
+Pipeline is written directly in Jenkinsfile in my GitHub repository.
+
+3️⃣ Issues Faced
+Jenkinsfile syntax errors due to improper braces.
+
+Jenkins not detecting local Jenkinsfile due to case sensitivity (jenkinsfile vs Jenkinsfile).
+
+Git not tracking uncommitted file.
+
+Notify stage failed initially due to SMTP email configuration.
+
+4️⃣ Solutions
+Corrected Jenkinsfile syntax (proper closing braces).
+
+Renamed Jenkinsfile properly with capital J to match SCM expectation.
+
+Added file correctly into Git using git mv command.
+
+Modified Notify stage to use echo (simulation) to avoid SMTP configuration.
+
+
+
+
+
+
+
