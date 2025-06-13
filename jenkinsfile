@@ -30,11 +30,8 @@ pipeline {
         }
 
         stage('Notify') {
-           steps {
-        echo 'Notification: Build completed successfully (simulation for lab submission)'
-    }
-}
-
+            steps {
+                echo 'Notification: Build completed successfully (simulation for lab submission)'
             }
         }
     }
