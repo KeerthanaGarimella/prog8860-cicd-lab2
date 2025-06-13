@@ -1,0 +1,41 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                git credentialsId: 'github-pat', url: 'https://github.com/KeerthanaGarimella/prog8860-cicd-lab2', branch: 'main'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                echo 'Simulating build...'
+                // Add real build commands here if needed
+            }
+        }
+
+        stage('Test') {
+            steps {
+                echo 'Running tests...'
+                // Add test scripts or unit tests here
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                echo 'Deploying application...'
+                // Optional deployment stage
+            }
+        }
+
+        stage('Notify') {
+           steps {
+        echo 'Notification: Build completed successfully (simulation for lab submission)'
+    }
+}
+
+            }
+        }
+    }
+}
